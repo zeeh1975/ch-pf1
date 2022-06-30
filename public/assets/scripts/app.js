@@ -15,7 +15,7 @@ let carrito;
 let cantidadProductosCarrito;
 let processProduct;
 let activeModalProductForm;
-const admin = false;
+const admin = true;
 
 // Funciones utiles
 

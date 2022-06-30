@@ -33,5 +33,7 @@
 **Notas:**
 - Utilizar **npm install** para descargar las dependencias.
 - Usar **node src/server.js** para ejecutar el proyec
-- Para probar el punto 3 de 'Aspectos a incluir en el entregable' se puede cambiar el valor de *admin* en el archivos /middleware/auth.js
+- Para probar el punto 3 de 'Aspectos a incluir en el entregable' se puede cambiar el valor de la variable *admin* en el archivo /middleware/auth.js linea 4 y en el archivo public/assets/scripts/app.js línea 18
+  Cuando admin es true en la pagina web se muestra un botón "Nuevo producto" y en cada tarjeta de producto aparecen dos botones uno para modificar el producto y otro para borrarlo ambos a la derecha del precio.
+  Para probar las restricciones de autenticación del lado del servidor se puede dejar el valor de admin en true en el lado del cliente (app.js) y admin en false del lado del servidor (auth.js) y al intentar agregar, modificar o eliminar un producto mostrara un mensaje de operación no autorizada.
 

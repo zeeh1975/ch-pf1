@@ -1,7 +1,7 @@
 const { HTTP_STATUS_ERROR_BAD_UNAUTHORIZED } = require("../public/assets/scripts/const");
 const { buildErrorMessage } = require("../src/util.js");
 
-const admin = false;
+const admin = true;
 
 const isAdmin = (req, res, next) => {
   if (admin) {
