@@ -1,0 +1,52 @@
+{{#if productos.length}}
+<section class="h-100 h-custom" style="background-color: #eee;">
+	<div class="container h-100">
+		<div class="row d-flex justify-content-center align-items-center h-100">
+			<div class="col">
+				<div class="row">
+					<div class="col">
+						<div class="d-flex justify-content-between align-items-center mt-4 mb-4">
+							<div>
+								<p class="mb-0">Tiene {{cantidadProductosCarrito}} items en el carrito</p>
+							</div>
+						</div>
+						{{#each productos}}
+						<!-- Producto   -->
+						<div id="{{this.id}}" name="cartitemcard" class="card mb-3">
+							<div class="card-body">
+								<div class="d-flex justify-content-between">
+									<div class="d-flex flex-row align-items-center">
+										<div>
+											<img src="{{this.foto}}" class="img-fluid rounded-3" alt="Shopping item" style="height: 65px;">
+										</div>
+										<div class="ms-3">
+											<p class="small mb-0">{{this.nombre}}</p>
+										</div>
+									</div>
+									<div class="d-flex flex-row align-items-center">
+										<div style="width: 50px;">
+											<h5 class="fw-normal mb-0">{{this.stock}}</h5>
+										</div>
+										<div style="width: 80px;">
+											<h5 class="mb-0">{{this.precioFormateado}}</h5>
+										</div>
+										<a href="" style="color: #000000;"><span class="bi bi-trash" id="{{this.id}}"
+												name="removefromcart"></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- fin Producto  -->
+						{{/each}}
+						<div class="d-flex">
+							<p class="text-end w-100"><strong>Total {{importeTotal}}</strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{{else}}
+<h5 class="alert alert-warning">El carrito esta vacio</h3>
+	{{/if}}

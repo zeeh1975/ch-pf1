@@ -1,0 +1,28 @@
+{{#if productos.length}}
+{{#each productos}}
+<div class="col mt-3">
+	<div class="card h-100 shadow" style="width: 18rem;">
+		<div id="{{this.id}}" class="card-body d-flex flex-column">
+			<img class="card-img-top img-fluid" src="{{this.foto}}" alt="Imagen no encontrada"
+				style="height: 18rem;object-fit: scale-down;">
+			<div class="card-row">
+				<h5 class="card-title">{{this.nombre}}</h5>
+			</div>
+			<div class="card-row">
+				<p class="card-text">{{this.descripcion}}</p>
+			</div>
+			<div class="card-footer mt-auto">
+				{{#if ../isAdmin}}
+				<a data-bs-toggle="tooltip" title="Editar producto" href="" style="color: #000000;"><span class="bi bi-pen" id="{{this.id}}" name="editproduct"></span></a>
+				<a data-bs-toggle="tooltip" title="Eliminar producto" href="" style="color: #000000;"><span class="bi bi-trash" id="{{this.id}}" name="removeproduct"></span></a>
+				{{/if}}
+				<p class="d-inline float-end"><strong>{{this.precioFormateado}}</strong></p>
+				<a href="" id="{{this.id}}" name="cartAdd" class="btn btn-primary w-100">Agregar al carrito</a>
+			</div>
+		</div>
+	</div>
+</div>
+{{/each}}
+{{else}}
+<h3 class="alert alert-warning">No hay productos</h3>
+{{/if}}
