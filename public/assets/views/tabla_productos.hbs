@@ -13,8 +13,10 @@
 			</div>
 			<div class="card-footer mt-auto">
 				{{#if ../isAdmin}}
-				<a data-bs-toggle="tooltip" title="Editar producto" href="" style="color: #000000;"><span class="bi bi-pen" id="{{this.id}}" name="editproduct"></span></a>
-				<a data-bs-toggle="tooltip" title="Eliminar producto" href="" style="color: #000000;"><span class="bi bi-trash" id="{{this.id}}" name="removeproduct"></span></a>
+				<a data-bs-toggle="tooltip" title="Editar producto" href="" style="color: #000000;"><span class="bi bi-pen"
+						id="{{this.id}}" name="editproduct"></span></a>
+				<a data-bs-toggle="tooltip" title="Eliminar producto" href="" style="color: #000000;"><span class="bi bi-trash"
+						id="{{this.id}}" name="removeproduct"></span></a>
 				{{/if}}
 				<p class="d-inline float-end"><strong>{{this.precioFormateado}}</strong></p>
 				<a href="" id="{{this.id}}" name="cartAdd" class="btn btn-primary w-100">Agregar al carrito</a>

@@ -80,9 +80,7 @@ const addProductoCarrito = (req, res) => {
       // incremento en uno la cantidad
       carrito.productos[index].stock++;
       carritos.saveToFile();
-      res
-        .status(HTTP_STATUS_CREATED)
-        .end();
+      res.status(HTTP_STATUS_CREATED).end();
       return;
     }
     const producto = productos.getById(idProducto);
@@ -91,9 +89,7 @@ const addProductoCarrito = (req, res) => {
       nuevoProducto.stock = 1;
       carrito.productos.push(nuevoProducto);
       carritos.saveToFile();
-      res
-        .status(HTTP_STATUS_CREATED)
-        .end();
+      res.status(HTTP_STATUS_CREATED).end();
     } else {
       res
         .status(HTTP_STATUS_ERROR_NOT_FOUND)

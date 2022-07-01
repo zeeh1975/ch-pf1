@@ -4,7 +4,7 @@ async function showCart(showButtons) {
     html: document.querySelector("#shopingcart").innerHTML,
     showDenyButton: showButtons,
     showConfirmButton: showButtons,
-    confirmButtonText: 'Comprar...',
+    confirmButtonText: "Comprar...",
     denyButtonText: `Vaciar carrito`,
     showCloseButton: false,
     position: "top-right",

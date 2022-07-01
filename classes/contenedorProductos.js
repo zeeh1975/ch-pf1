@@ -15,7 +15,6 @@ const { validUrlRegex } = require("../public/assets/scripts/const");
 // 	}, ...
 // ]
 
-
 // Clase contenedora de productos
 class ContenedorProductos extends Contenedor {
   constructor(nombreArchivoContenedor) {

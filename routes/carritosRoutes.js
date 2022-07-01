@@ -15,4 +15,3 @@ rutasCarritos.post("/:id/productos", addProductoCarrito);
 rutasCarritos.delete("/:id/productos/:id_prod", deleteProductoCarrito);
 
 module.exports = rutasCarritos;
-

@@ -1,23 +1,23 @@
 body {
-  /* padding-top: 50px; */
-  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
-  min-height: 100vh;
+	/* padding-top: 50px; */
+	background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+	min-height: 100vh;
 }
 
 nav {
-  background-image: linear-gradient(90deg, #9FACE6 0%, #74EBD5 100%);
+	background-image: linear-gradient(90deg, #9FACE6 0%, #74EBD5 100%);
 }
 
-.float{
-	position:fixed;
-	width:120px;
-	height:60px; 
+.float {
+	position: fixed;
+	width: 120px;
+	height: 60px;
 	top: 40px;
-	right:40px;
-	border-radius:50px;
-	text-align:center;
+	right: 40px;
+	border-radius: 50px;
+	text-align: center;
 }
 
-.my-float{
-	margin-top:22px;
+.my-float {
+	margin-top: 22px;
 }

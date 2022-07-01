@@ -11,7 +11,7 @@ const HTTP_STATUS_CREATED = 201;
 const PRODUCTO_INEXISTENTE = "El producto no existe";
 const CARRITO_INEXISTENTE = "El id de carrito no es valido";
 
-// chequeo que module este definido para que no 
+// chequeo que module este definido para que no
 // salte error en caso de usarlo del lado del cliente
 if (typeof module !== "undefined" && module.exports) {
   module.exports = {
