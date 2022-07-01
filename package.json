@@ -1,7 +1,7 @@
 {
   "name": "proyectofinal1",
   "version": "1.0.0",
-  "description": "Primera entrega del Proyecto Final",
+  "description": "Coderhouse backend: Primera entrega del Proyecto Final",
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
